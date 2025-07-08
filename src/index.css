@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@font-face {
+  font-family: "NotoSans";
+  src: url("/src/assets/fonts/NotoSans-VariableFont_wdth,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@theme {
+  --font-display: "NotoSans", "sans-serif";
+  --background-light-gradient: linear-gradient(
+    180deg,
+    #ebf2fc 0%,
+    #eefbf9 100%
+  );
+  --background-dark-gradient: linear-gradient(180deg, #04091b 0%, #091540 100%);
+}
+
+.bg-light-gradient {
+  background-image: var(--background-light-gradient);
+}
+[data-theme="dark"] .bg-dark-gradient {
+  background-image: var(--background-dark-gradient);
+}
