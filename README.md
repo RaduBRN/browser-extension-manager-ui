@@ -19,8 +19,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/responsive-browser-extension-manager-ui-made-wreact-tailwind-motion-GFGntQYxxK)
-- Live Site URL: [Add live site URL here](https://darling-fenglisu-316282.netlify.app/)
+- Solution URL: [frontendmentor.io](https://www.frontendmentor.io/solutions/responsive-browser-extension-manager-ui-made-wreact-tailwind-motion-GFGntQYxxK)
+- Live Site URL: [netlify](https://darling-fenglisu-316282.netlify.app/)
 
 ### Built with
 
