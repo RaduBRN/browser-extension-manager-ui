@@ -33,7 +33,7 @@ function Content() {
           {renderedButton}
         </div>
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid md:grid-cols-2 lg:grid-cols-[repeat(auto-fill,minmax(324px,1fr))] gap-4">
         <BrowserExtensions displayOption={displayOption} />
       </div>
     </main>
