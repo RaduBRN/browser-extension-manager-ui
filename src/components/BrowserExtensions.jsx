@@ -2,6 +2,10 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import data from "../data/data.json";
 
+function getImageUrl(name) {
+  return new URL(`../assets/images/${name}`, import.meta.url).href;
+}
+
 function BrowserExtensions({ displayOption }) {
   const [cards, setCards] = useState(data);
 
@@ -50,7 +54,7 @@ function BrowserExtensions({ displayOption }) {
           <div className="flex gap-2">
             <div className="max-w-[60px] max-h-[60px]">
               <img
-                src={item.logo}
+                src={getImageUrl(item.logo)}
                 alt={item.name}
                 className="max-w-fit max-h-fit"
               />
