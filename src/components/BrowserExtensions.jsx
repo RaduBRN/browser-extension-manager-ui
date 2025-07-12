@@ -33,7 +33,7 @@ function BrowserExtensions({ displayOption }) {
 
   return (
     <AnimatePresence>
-      {filteredCards.map((item, index) => (
+      {filteredCards.map((item) => (
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -102,8 +102,6 @@ function BrowserExtensions({ displayOption }) {
       ))}
     </AnimatePresence>
   );
-
-  return renderedCard;
 }
 
 export default BrowserExtensions;
